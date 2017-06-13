@@ -1,0 +1,32 @@
+header {
+  @include respond-to("large") {
+    height: 100vh;
+    padding: 80px 40px;
+  };
+  padding: 25px;
+  img {
+    width: 50px;
+  }
+  background-image: url(../img/hero.jpg);
+  @extend %background-center;
+  color: white;
+  nav .col-2 ul {
+    display: none;
+    flex: 0;
+    font-family: 'Fjalla One', sans-serif;
+    @include respond-to('large') {
+      display: flex;
+      flex: 1;
+    }
+    li {
+      font-size: .8em;
+      letter-spacing: .15em;
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+  h3 {
+    margin-left: 10px;
+  }
+}

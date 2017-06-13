@@ -1,0 +1,27 @@
+h1 {
+  font-size: 3em;
+  @include respond-to('large') {
+    font-size: 7em;
+  };
+}
+
+h4, h5 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h5 {
+  font-size: .8em;
+  letter-spacing: .25em;
+  @include respond-to('large') {
+    font-size: 1.3em;
+  };
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}

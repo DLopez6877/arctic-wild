@@ -1,0 +1,45 @@
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  .img-link {
+    display: flex;
+    @extend %background-center;
+    height: 400px;
+    position: relative;
+    img {
+      @include transparent-circle(52, 52, 51, .85);
+      margin: auto;
+    }
+    h4 {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      color: white;
+    }
+  }
+  .img-link:nth-child(1) {
+    background-image: url('http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-raft.jpg');
+    flex-basis: 50%;
+  }
+  .img-link:nth-child(2) {
+    background-image: url('http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-basecamp.jpg');
+    flex-basis: 25%;
+  }
+
+  .img-link:nth-child(3) {
+    background-image: url('http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-backpacking.jpg');
+    flex-basis: 25%;
+  }
+  .img-link:nth-child(4) {
+    background-image: url('http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-canoe.jpg');
+    flex-basis: 25%;
+  }
+  .img-link:nth-child(5) {
+    background-image: url('http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-photo.jpg');
+    flex-basis: 25%;
+  }
+  .img-link:nth-child(6) {
+    background-image: url('http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg');
+    flex-basis: 50%;
+  }
+}

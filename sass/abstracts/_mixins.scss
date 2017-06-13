@@ -1,0 +1,12 @@
+@mixin transparent-circle($red, $green, $blue, $opacity) {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba($red, $green, $blue, $opacity);
+  display: flex;
+  transition: transform .3s;
+  &:hover {
+    transform: scale(1.2, 1.2);
+    background: rgba($red, $green, $blue, .85);
+  }
+}
