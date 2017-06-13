@@ -1,11 +1,10 @@
 nav {
   display: flex;
   justify-content: space-between;
-  display: none;
   flex: 0;
   @include respond-to('large') {
-    display: flex; 
-  };
+    display: flex;
+  }
   & > [class^="col"], ul {
     display: flex;
     align-items: center;
@@ -20,6 +19,6 @@ nav {
     @include respond-to('large') {
       display: none;
       flex: 0;
-    };
+    }
   }
 }

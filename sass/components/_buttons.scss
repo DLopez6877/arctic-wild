@@ -4,7 +4,7 @@
   display: none;
   @include respond-to('large') {
     display: block;
-    margin-top: 25%;
+    margin-top: 25vh;
   };
   &::after {
     content: "";
